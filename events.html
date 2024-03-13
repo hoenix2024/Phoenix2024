@@ -11,9 +11,15 @@
 
        body{
             background-image: url("/img/bg.jpg");
-            background: cover;
+            /* background: cover; */
             background-attachment: fixed;
             background-size: 100% 100%;
+            /* background-image: url("/img/bg.jpg");
+            background-attachment: fixed; */
+            background-size: cover; /* Update background-size property */
+            margin: 0; /* Add margin */
+            padding: 0; /* Add padding */
+            font-family: 'Times New Roman';
         }
         *{
             margin: 0;
@@ -74,6 +80,15 @@
             height: 70px;
             position: relative;
             background-color: orange;
+        }
+        @media (max-width: 768px) {
+            .linux-details {
+                flex-direction: column; /* Stack items vertically */
+            }
+            .text, .linux-img {
+                width: 100%; /* Make text and image full width */
+                margin: 0 auto; /* Center align */
+            }
         }
     </style>
 </head>
@@ -169,6 +184,7 @@
                 <button><a href="timetable.html">"More >"</a> </button>
         </div>
     </div>
+
     <hr>
 
     <footer>
