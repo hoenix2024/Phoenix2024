@@ -4,59 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Time Table</title>
     <link rel="stylesheet" href="nav.css">
     <style>
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-
-            background-image: url("img/event.avif");
-            background: cover;
-            background-attachment: fixed;
-            background-size: 100% 100%;
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
         }
-        .infotbl{
+
+        /* body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        } */
+        /* main{
+            border: 2px solid red;
+        } */
+        .sections {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column;
+            padding: 20px 0px;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
-        table,th,td {
-            /* display: flex;
+        .sections>table,
+        th,
+        td {
+            border-collapse: collapse;
+            border: 2px solid blue;
+            padding: 10px 10px;
+        }
+
+        /* #section-1 > h1{
+            display: flex;
             justify-content: center;
             align-items: center;
-            color: white;
-            border: 2px solid red;
-            padding: 10px; */
-            color: white;
-            border: 3px solid yellow;
-            padding: 10px 20px;
+        } */
+        /* #section-1 > table > td{
             border-collapse: collapse;
-            font-size: larger;
+            border: 2px solid blue;
+        } */
+
+        @media only screen and (max-width: 660px) {
+            body {
+                background-color: lightblue;
+            }
+
+            .sections>h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
             
         }
-        table > caption{
-            margin: 20px 0px;
-        }
+        @media (max-width: 350px) and (min-width:0px) {
+            body {
+                background-color: slateblue;
+            }
 
-        /* thead > tr{
-            border: 2px solid black;
-            padding: 10px 10px;
-        } */
-        caption{
-            font-size:50px;
-            color:red;
+            .sections>h1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .tbl{
+                margin: auto 21px;
+            }
+            
         }
     </style>
 </head>
-<!-- <?php include ('nav.html');?> -->
-<header>
-    <div class="container">
+
+<body>
+    <header>
+<div class="container">
       <div class="logo-box">
         <a href="/">
-          <img src="">
+          <img src="img/logo.png">
         </a>
       </div>
       <nav>
@@ -69,60 +97,251 @@
      </ul>
     </nav>
     </div>
-  </header>
+    </header>
+    <main>
+        <section class="sections">
+            <h1>Gramin Technical & Management Campus Vishnupuri Nanded</h1>
+            <table>
+                <caption>
+                    <h1>Hackathon</h1>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Events</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="8">1 Apr, 2024</td>
+                        <td>Registration process for hackthon</td>
+                        <td>09:00 am to 11:00 am</td>
+                        <td>Fire & Sefety Department</td>
+                    </tr>
+                    <tr>
 
-<body>
-    <div class="infotbl">
-    <table>
-        <caption>Event Timing</caption>
-        <thead>
-            <tr>
-                <th>No.</th>
-                <th> Event name</th>
-                <th>Date</th>
-                <th>Time(from)</th>
-                <th>Time(to)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Hackthon Competition</td>
-                <td>1 april 2024</td>
-                <td>9:00 AM</td>
-                <td>9:00 PM</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Coding Competition</td>
-                <td>2 april 2024</td>
-                <td>9:30 pm</td>
-                <td>5:30 PM</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Lan Gaming</td>
-                <td>2 april 2024</td>
-                <td>2:30 pm</td>
-                <td>5:30 PM</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Project Expo</td>
-                <td>2 april 2024</td>
-                <td>2:30 pm</td>
-                <td>5:30PM</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Quiz Competition</td>
-                <td>2 april 2024</td>
-                <td>2:30 pm</td>
-                <td>5:30PM</td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
+                        <td>Inauguration</td>
+                        <td>11:00 am to 12:00 pm</td>
+                        <td>Dr. A.P.J. Abdul Kalam Auditorium</td>
+                    </tr>
+                    <tr>
+
+                        <td>Lunch</td>
+                        <td>12:00 pm to 01:00 pm</td>
+                        <td>Hostel Management Department</td>
+                    </tr>
+                    <tr>
+
+                        <td>Hackathon Phase I</td>
+                        <td>12:00 pm onwards</td>
+                        <td>Hall no. 402</td>
+                    </tr>
+                    <tr>
+
+                        <td>Relaxation</td>
+                        <td>06:30 pm to 07:30 pm</td>
+                        <td>Dr. A.P.J. Abdul Kalam Auditorium</td>
+                    </tr>
+                    <tr>
+
+                        <td>Dinner</td>
+                        <td>07:30 pm to 09:00 pm</td>
+                        <td>Hostel Management Department</td>
+                    </tr>
+                    <tr>
+
+                        <td>Jury Round I</td>
+                        <td>09:30 pm</td>
+                        <td>Hall no. 402</td>
+                    </tr>
+                    <tr>
+
+                        <td>Hackathon Phase II</td>
+                        <td>09:30 pm onwards</td>
+                        <td>Hall no. 402</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">2 Apr, 2024</td>
+                        <td>Fun Game</td>
+                        <td>06:00 am to 06:20 am</td>
+                        <td>Dr. A.P.J. Abdul Kalam Auditorium</td>
+                    </tr>
+                    <tr>
+
+                        <td>Jury Round II</td>
+                        <td>07:30 am</td>
+                        <td>Hall no. 402</td>
+                    </tr>
+                    <tr>
+
+                        <td>Hackathon Phase III</td>
+                        <td>07:30 am onwards</td>
+                        <td>Hall no. 402</td>
+                    </tr>
+                    <tr>
+
+                        <td>Lunch</td>
+                        <td>11:30 am</td>
+                        <td>Hostel Management Department</td>
+                    </tr>
+                    <tr>
+
+                        <td>Jury Round III</td>
+                        <td>02:00 pm</td>
+                        <td>Hall no. 402</td>
+                    </tr>
+                </tbody>
+                <!-- <tfoot></tfoot> -->
+            </table>
+        </section>
+
+
+        <section class="sections" >
+            <h1>Gramin Technical & Management Campus Vishnupuri Nanded</h1>
+            <table class="tbl">
+                <caption>
+                    <h1>Project Expo</h1>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Events</th>
+                        <th>Time</th>
+                        <th>Location</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">3 Apr, 2024</td>
+                        <td>Registration process for project Expo</td>
+                        <td>09:00 am to 11:00 am</td>
+                        <td>at</td>
+                    </tr>
+                    <tr>
+                        <td>Inauguration for project expo</td>
+                        <td>11:00 am to 12:00 pm</td>
+                        <td>at</td>
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td>Lunch</td>
+                        <td>12:00 pm to 01:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Hackathon Phase I</td>
+                        <td>12:00 pm onwards</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Relaxation</td>
+                        <td>06:30 pm to 07:30 pm</td>
+                    </tr> -->
+                </tbody>
+                <!-- <tfoot></tfoot> -->
+            </table>
+        </section>
+
+        <section class="sections">
+            <h1>Gramin Technical & Management Campus Vishnupuri Nanded</h1>
+            <table class="tbl">
+                <caption>
+                    <h1>Coding Compidition</h1>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Events</th>
+                        <th>Time</th>
+                        <th>Location</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">3 Apr, 2024</td>
+                        <td>Registration process for project Expo</td>
+                        <td>09:00 am to 11:00 am</td>
+                        <td>at</td>
+
+                    </tr>
+                    <tr>
+                        <td>Inauguration for project expo</td>
+                        <td>11:00 am to 12:00 pm</td>
+                        <td>at</td>
+
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td>Lunch</td>
+                        <td>12:00 pm to 01:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Hackathon Phase I</td>
+                        <td>12:00 pm onwards</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Relaxation</td>
+                        <td>06:30 pm to 07:30 pm</td>
+                    </tr> -->
+                </tbody>
+                <!-- <tfoot></tfoot> -->
+            </table>
+        </section>
+
+        <section class="sections">
+            <h1>Gramin Technical & Management Campus Vishnupuri Nanded</h1>
+            <table class="tbl">
+                <caption>
+                    <h1>Quiz Compidition (Aptitude)</h1>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Events</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">3 Apr, 2024</td>
+                        <td>Registration process for project Expo</td>
+                        <td>09:00 am to 11:00 am</td>
+                        <td>at</td>
+
+                    </tr>
+                    <tr>
+                        <td>Inauguration for project expo</td>
+                        <td>11:00 am to 12:00 pm</td>
+                        <td>at</td>
+
+                    </tr>
+                    <!-- <tr>
+                        <td></td>
+                        <td>Lunch</td>
+                        <td>12:00 pm to 01:00 pm</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Hackathon Phase I</td>
+                        <td>12:00 pm onwards</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Relaxation</td>
+                        <td>06:30 pm to 07:30 pm</td>
+                    </tr> -->
+                </tbody>
+                <!-- <tfoot></tfoot> -->
+            </table>
+        </section>
+    </main>
 </body>
 
 </html>
