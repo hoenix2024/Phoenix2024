@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time Table</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+
     <style>
         * {
             box-sizing: border-box;
@@ -27,6 +29,7 @@
             padding: 20px 0px;
             gap: 10px;
             flex-wrap: wrap;
+            color: white;
         }
 
         .sections>table,
@@ -83,14 +86,14 @@
     <header>
 <div class="container">
       <div class="logo-box">
-        <a href="/">
+        <a href="index.html">
           <img src="img/logo.png">
         </a>
       </div>
       <nav>
       <ul>
         <li><a href="index.html">home</a></li>
-        <!-- <li><a href="">work</a></li> -->
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdVI51POuPlUrgRxcI78gpi-XzVrWvkd8YZF2wJhrkyL9yxHg/viewform?usp=sf_link">Register</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="timetable.html">Timing</a></li>
         <li><a href="form.html">contact</a></li>
@@ -100,10 +103,10 @@
     </header>
     <main>
         <section class="sections">
-            <h1>Gramin Technical & Management Campus Vishnupuri Nanded</h1>
+            <h1 style="color: orangered;">Gramin Technical & Management Campus Vishnupuri Nanded</h1>
             <table>
                 <caption>
-                    <h1>Hackathon</h1>
+                    <h1 style="color: orangered;">Hackathon</h1>
                 </caption>
                 <thead>
                     <tr>
@@ -342,6 +345,42 @@
             </table>
         </section>
     </main>
+    <div style="height: 90px;">
+
+    </div>
+    <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a></li>
+          <li class="social-icon__item"><a class="social-icon__link" href="#">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a></li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="https://docs.google.com/forms/d/e/1FAIpQLSdVI51POuPlUrgRxcI78gpi-XzVrWvkd8YZF2wJhrkyL9yxHg/viewform?usp=sf_link">Register</a></li>
+            <li class="menu__item"><a class="menu__link" href="events.html">Events</a></li>
+            <li class="menu__item"><a class="menu__link" href="timetable.html">Timetable</a></li>
+            <li class="menu__item"><a class="menu__link" href="form.html">Contact</a></li>
+      
+        </ul>
+        <p>&copy;2024 Fly-24 | All Rights Reserved</p>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

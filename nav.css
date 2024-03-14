@@ -28,7 +28,12 @@ body {
     outline: none;
     display: block;
   }
-  .logo-box img {display: block;}
+  .logo-box img {display: block;
+     width: 80px;
+     height: 60px;
+     border: 2px solid rgb(255, 94, 0);
+     border-radius: 8px;
+  }
   nav {
     overflow: hidden;
   }
@@ -49,10 +54,13 @@ body {
     text-decoration: none;
     display: block;
     position: relative;
-    color: #fdfbfb;
+    color:white;
     text-transform: uppercase;
     font-size: 25px ;
-    font-weight: 200;
+    font-weight:bold;
+  }
+  nav a:hover{
+    color: orangered;
   }
   nav a:after {
     content: "";
